@@ -1,12 +1,21 @@
 import React from 'react'
 import SignIn from './Authentication/SingIn'
-import SignOut from './Authentication/SignOut'
+import SignUp from './Authentication/SignUp'
+import {AuthenticationContextProvider} from '../Context/AuthenticationContext'
+import Form from './Authentication/Form'
 
 export const Home = () => {
+//  state_variable
+//  useEffect(){
+
+//  }
   return (
     <>
-        <SignIn/>
-        <SignOut/>
+        <AuthenticationContextProvider>
+
+            {/* <SignIn/> */}
+            <SignUp/>
+        </AuthenticationContextProvider>
     </>
   )
 }
