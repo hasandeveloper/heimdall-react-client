@@ -17,6 +17,15 @@ export const SignUp = () => {
                 error={error}
                 onChangeHandler={onChangeHandler}
           />
+
+      <div>
+        <input value={formData.subdomain} placeholder="Subdoomain" type="text" onChange={onChangeHandler} name="subdomain" />
+      </div>
+
+      <div>
+        <button type="submit">Register</button>
+      </div>
+
       </form>
 
     </div>

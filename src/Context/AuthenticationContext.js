@@ -14,8 +14,13 @@ export const AuthenticationContextProvider = ({children}) => {
     message: ""
   })
 
-  const onChangeHandler = (e) => {
-
+    //onChange handler
+    const onChangeHandler = (e) => {
+      setFormData({
+          ...formData, //means accept all form data
+          //for below meaning let say email="fa@gmail.com"
+          [e.target.name]: e.target.value,
+      })
   }
 
   const signInHandler = (a) => {
@@ -23,6 +28,7 @@ export const AuthenticationContextProvider = ({children}) => {
   }
 
   const signUpHandler = (a) => {
+    debugger
     alert(a)
   }
 
