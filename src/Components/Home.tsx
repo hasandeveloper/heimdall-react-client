@@ -3,6 +3,9 @@ import SignIn from './Authentication/SingIn'
 import SignUp from './Authentication/SignUp'
 import {AuthenticationContextProvider} from '../Context/AuthenticationContext'
 import Form from './Authentication/Form'
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient()
 
 const Home: React.FC = () => {
 //  state_variable
@@ -11,11 +14,14 @@ const Home: React.FC = () => {
 //  }
   return (
     <>
-        <AuthenticationContextProvider>
 
+            <QueryClientProvider client={queryClient}>
+                <AuthenticationContextProvider>
             {/* <SignIn/> */}
-            <SignUp/>
-        </AuthenticationContextProvider>
+                <SignUp/>
+                </AuthenticationContextProvider>
+            </QueryClientProvider>
+
     </>
   )
 }
