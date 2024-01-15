@@ -45,7 +45,6 @@ export const AuthenticationContextProvider: React.FC<React.PropsWithChildren> = 
                 })
             }
         }
-
     }
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {

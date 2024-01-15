@@ -1,5 +1,4 @@
 import React, {useContext} from 'react'
-import { URL, AUTHENTICATION_URI } from '../../Utils/ApiUrl'
 import { AuthenticationContext } from '../../Context/AuthenticationContext'
 import Form from './Form'
 
@@ -22,11 +21,10 @@ export const SignUp: React.FC = () => {
       </div>
 
       <div>
-        <button type="submit">Register</button>
+        <button type="submit">Sign Up</button>|<a href="/sign_in">Sign In?</a>
       </div>
 
       </form>
-
     </div>
   )
 }
