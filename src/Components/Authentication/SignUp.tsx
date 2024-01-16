@@ -17,7 +17,7 @@ export const SignUp: React.FC = () => {
                 onChangeHandler={onChangeHandler}
           />
       <div>
-        <input value={formData.subdomain} placeholder="Subdoomain" type="text" onChange={onChangeHandler} name="subdomain" />
+        <input value={formData?.subdomain} placeholder="Subdoomain" type="text" onChange={onChangeHandler} name="subdomain" />
       </div>
 
       <div>
