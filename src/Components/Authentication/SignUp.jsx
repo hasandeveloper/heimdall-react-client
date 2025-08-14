@@ -4,13 +4,8 @@ import Form from './Form'
 const SignUp = () => {
   return (
     <div>
-        <h4>Sign Up</h4>
-        <form>
-            <Form/>
-            <div>
-                <button type="submit">SignUp</button>
-            </div>
-        </form>
+        <h4>Sign In</h4>
+        <Form type="sign_up"/>
     </div>
   )
 }
